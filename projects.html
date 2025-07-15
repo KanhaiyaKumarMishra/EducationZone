@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EducationZone | Projects</title>
+    <link href="../STYLESTYLE/styles.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <style>
+        /* Title styling (reused from Services) */
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #1a202c;
+            position: relative;
+        }
+
+            .section-title::after {
+                content: "";
+                width: 80px;
+                height: 4px;
+                background-color: #10b981; /* Green underline for distinction */
+                display: block;
+                margin: 10px auto 0;
+                border-radius: 2px;
+            }
+
+        /* Portfolio grid container */
+        .portfolio-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+            /* Reuse card styling, add minor variation */
+            .portfolio-items .card {
+                background-color: #ffffff;
+                border-radius: 16px;
+                padding: 30px 20px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                text-align: left;
+                border-left: 5px solid #10b981; /* Green accent */
+            }
+
+                .portfolio-items .card:hover {
+                    transform: translateY(-8px);
+                    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+                }
+
+                .portfolio-items .card h2 {
+                    font-size: 22px;
+                    margin-bottom: 12px;
+                    color: #047857;
+                }
+
+                .portfolio-items .card p {
+                    font-size: 15px;
+                    line-height: 1.6;
+                    color: #4b5563;
+                }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="logo.png" alt="EducationZone Logo"> EducationZone</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <h1 class="section-title">Our Projects</h1>
+        <div class="portfolio-items">
+            <div class="card">
+                <h2>Project A: E-commerce Platform</h2>
+                <p>A scalable online store with secure payment and user management features.</p>
+            </div>
+            <div class="card">
+                <h2>Project B: CRM App</h2>
+                <p>Customer relationship management app to streamline sales and support.</p>
+            </div>
+            <div class="card">
+                <h2>Project C: Mobile Game</h2>
+                <p>Fun and addictive mobile game built with Unity and real-time multiplayer.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer><p>&copy; 2025 EducationZone Solutions</p></footer>
+</body>
+</html>

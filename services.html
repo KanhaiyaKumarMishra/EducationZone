@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EducationZone | Services</title>
+    <link href="../STYLESTYLE/styles.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        /* Section title */
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #1a202c;
+            position: relative;
+        }
+
+            .section-title::after {
+                content: "";
+                width: 80px;
+                height: 4px;
+                background-color: #3b82f6;
+                display: block;
+                margin: 10px auto 0;
+                border-radius: 2px;
+            }
+
+        /* Service cards container */
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        /* Individual card */
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 30px 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+            .card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+            }
+
+            .card h2 {
+                font-size: 22px;
+                margin-bottom: 12px;
+                color: #1e3a8a;
+            }
+
+            .card p {
+                font-size: 15px;
+                line-height: 1.6;
+                color: #4b5563;
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="logo.png" alt="EducationZone Logo"> EducationZone</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="container">
+        <h1 class="section-title">Our Services</h1>
+        <div class="service-cards">
+            <div class="card">
+                <h2>Web Development</h2>
+                <p>Modern, responsive websites tailored to your business needs.</p>
+            </div>
+            <div class="card">
+                <h2>Mobile Apps</h2>
+                <p>Cross-platform mobile applications with seamless UX.</p>
+            </div>
+            <div class="card">
+                <h2>Custom Software</h2>
+                <p>Tailor-made software solutions to improve your workflow.</p>
+            </div>
+            <div class="card">
+                <h2>Cloud Solutions</h2>
+                <p>Scalable and secure cloud infrastructure & services.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer><p>&copy; 2025 EducationZone Solutions</p></footer>
+</body>
+</html>
